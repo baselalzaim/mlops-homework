@@ -4,6 +4,7 @@ from app.model import predict
 
 app = FastAPI()
 
+
 @app.get("/predict")
 def predict_endpoint(text: str):
     feature = hash_feature(text)
